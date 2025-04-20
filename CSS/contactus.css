@@ -1,0 +1,191 @@
+.contact-section {
+  padding: 80px 20px;
+  width: 1440px;
+  height:900px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 450px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  
+}
+
+.contact-form textarea {
+  height: 140px;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+
+.contact-form button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Map and Info Section */
+.contact-map-div {
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map-container iframe {
+  width: 98%;
+  height: 200px;
+  border: 0;
+ 
+}
+
+.info-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -100px;
+  margin-top: 20px;
+ 
+  /* font-size: 14px; */
+  color: #333;
+}
+
+.info-icons-text {
+  display: flex;
+  flex-direction: column; /* Stack image above text */
+  align-items: center;     /* Center horizontally */
+  text-align: center;      /* Center text */
+  max-width: 200px;
+  padding-left: 40px;
+  gap: 10px;
+}
+.info-icons-text p{
+  font-size: 9px;
+}
+.info-icons-text img{
+  height: 24px;
+  width: 24px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-left: -300px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-content h4 {
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #555;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

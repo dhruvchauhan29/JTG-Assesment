@@ -1,0 +1,51 @@
+.features {
+  margin-top: 50px;
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 10px;
+}
+
+.features .subtitle {
+  font-size: 20px;
+  color: #48545f;
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-item {
+  max-width: 280px;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #5b6770;
+  line-height: 1.5;
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #00BFFF;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.social-icons{
+  margin-top: -4px;
+  margin-right: 100px;
+}
+.social-icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 25px;
+}
+nav{
+  margin-left: 300px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('../assets/Rectangle\ 9.svg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 79%);
+}
+
+.overlay {
+  color: white;
+  /* background: rgba(0, 0, 0, 0.4); */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.overlay button {
+  padding: 12px 45px;
+  font-size: 16px;
+  border: none;
+  background-color: #2091F9;
+  color: white;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.overlay button:hover {
+  background-color: #0056b3;
+}
